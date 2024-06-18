@@ -210,7 +210,6 @@ body {
 .details .previewDEts {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 15vh;
 }
 
 .imagesdets {
@@ -218,6 +217,7 @@ body {
   display: flex;
   flex-direction: row;
   padding: 1vh;
+  opacity: 0;
 }
 
 .imagesdetsright {
@@ -396,6 +396,12 @@ body {
     transform: translate(-50%, -50%);
   }
 
+  .page1AND2middle {
+    min-height: 1vh;
+    width: 100%;
+    padding: 0 5vw;
+  }
+
   .page2 {
     min-height: 100vh;
     width: 100%;
@@ -531,5 +537,9 @@ body {
     height: 202.225px;
     position: relative;
     object-fit: cover;
+  }
+
+  .details .previewDEts {
+    transform: translateY(17px);
   }
 }

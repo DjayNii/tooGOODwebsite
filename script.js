@@ -131,18 +131,34 @@ function CursourAniamtion() {
   });
 }
 
-// var shopButtons = document.querySelector(".page2 #elem .details");
+function shopButtons(x) {
+  var shopButtons = document.querySelector(`.page2 .elem${x} .details`);
 
-// shopButtons.addEventListener("mouseenter", () => {
-//   gsap.to(".page2 .elem1 .details", {
-//     height: "35vh",
-//   });
-// });
-// shopButtons.addEventListener("mouseleave", () => {
-//   gsap.to(".page2 .elem1 .details", {
-//     height: "7vh",
-//   });
-// });
+  shopButtons.addEventListener("mouseenter", () => {
+    gsap.to(`.page2 .elem${x} .details`, {
+      height: "35vh",
+    });
+    gsap.to(` #details${x}  .imagesdets`, {
+      opacity: 1,
+      y: 0,
+      duration: 0.7,
+    });
+  });
+  shopButtons.addEventListener("mouseleave", () => {
+    gsap.to(`.page2 .elem${x} .details`, {
+      height: "7vh",
+    });
+    gsap.to(`#details${x}  .imagesdets`, {
+      opacity: 0,
+      y: 100,
+      duration: 0.7,
+    });
+  });
+}
+
+shopButtons(1);
+shopButtons(2);
+shopButtons(3);
 
 locomotiveAnimation();
 
@@ -153,3 +169,30 @@ vedioContainer();
 loadingAnimation();
 
 CursourAniamtion();
+
+// let mm = gsap.matchMedia();
+
+// mm.add("(max-width: 600px)", () => {
+//   var shopButtons = document.querySelector(`.page2 .elem${x} .details`);
+
+//   shopButtons.addEventListener("click", () => {
+//     gsap.to(`.page2 .elem${x} .details`, {
+//       height: "35vh",
+//     });
+//     gsap.to(` #details${x}  .imagesdets`, {
+//       opacity: 1,
+//       y: 0,
+//       duration: 0.7,
+//     });
+//   });
+//   shopButtons.addEventListener("mouseleave", () => {
+//     gsap.to(`.page2 .elem${x} .details`, {
+//       height: "7vh",
+//     });
+//     gsap.to(`#details${x}  .imagesdets`, {
+//       opacity: 0,
+//       y: 100,
+//       duration: 0.7,
+//     });
+//   });
+// });

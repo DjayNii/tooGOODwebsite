@@ -131,6 +131,19 @@ function CursourAniamtion() {
   });
 }
 
+// var shopButtons = document.querySelector(".page2 #elem .details");
+
+// shopButtons.addEventListener("mouseenter", () => {
+//   gsap.to(".page2 .elem1 .details", {
+//     height: "35vh",
+//   });
+// });
+// shopButtons.addEventListener("mouseleave", () => {
+//   gsap.to(".page2 .elem1 .details", {
+//     height: "7vh",
+//   });
+// });
+
 locomotiveAnimation();
 
 navBarAnimation();

@@ -174,7 +174,7 @@ body {
   align-items: center;
 }
 
-.page2 #elem img {
+.page2 #elem .shopimgs {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -182,12 +182,70 @@ body {
 }
 
 .page2 #elem .details {
-  height: 50px;
+  height: 7vh;
   width: 70%;
-  border-radius: 60px;
+  border-radius: 4vh;
   position: absolute;
   z-index: 9;
-  background-color: peachpuff;
+  padding: 1vw 2vw;
+  overflow: hidden;
+}
+
+.page2 #details1 {
+  background-color: #f5dfcf;
+}
+.page2 #details2 {
+  background-color: #edf3ff;
+}
+.page2 #details3 {
+  background-color: #fff;
+}
+
+.page2 #elem .details .previewDEts p {
+  font-family: hellvetica;
+  font-weight: 100;
+  font-size: 1.8vh;
+}
+
+.details .previewDEts {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15vh;
+}
+
+.imagesdets {
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  padding: 1vh;
+}
+
+.imagesdetsright {
+  width: 50%;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imagesdetsleft {
+  width: 50%;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imagesdets p {
+  font-family: hellvetica;
+  font-size: 1.5vh;
+  text-align: center;
+}
+
+.imginshop {
+  height: 15vh;
 }
 
 .page2AND3middle {
